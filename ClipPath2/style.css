@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(75deg, red, orange, yellow);
+    display: flex;
+}
+
+.container {
+    width: 750px;
+    height: 450px;
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+    background: url("https://picsum.photos/208");
+    box-shadow: 15px 15px 45px 0px #444444;
+}
+
+.container img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    clip-path: circle(0% at 0% 100%);
+    transition: all .8s;
+}
+
+
+.container input[type="radio"]{
+    position: relative;
+    z-index: 99;
+}
+
+
+.btn1:checked ~ .pic1 {
+    clip-path: circle(200% at 0% 100%);
+}
+
+.btn2:checked~.pic1,
+.btn2:checked~.pic2 {
+    clip-path: circle(200% at 0% 100%);
+}
+
+.btn3:checked~.pic1,
+.btn3:checked~.pic2,
+.btn3:checked~.pic3 {
+    clip-path: circle(200% at 0% 100%);
+}
+
+.btn4:checked~.pic1,
+.btn4:checked~.pic2,
+.btn4:checked~.pic3,
+.btn4:checked~.pic4 {
+    clip-path: circle(200% at 0% 100%);
+}
+
+.btn5:checked~.pic1,
+.btn5:checked~.pic2,
+.btn5:checked~.pic3,
+.btn5:checked~.pic4,
+.btn5:checked~.pic5 {
+    clip-path: circle(200% at 0% 100%);
+}
+
+.btn6:checked~.pic1,
+.btn6:checked~.pic2,
+.btn6:checked~.pic3,
+.btn6:checked~.pic4,
+.btn6:checked~.pic5,
+.btn6:checked~.pic6 {
+    clip-path: circle(200% at 0% 100%);
+}
